@@ -1,0 +1,1 @@
+java -jar test-endpoints.jar --server.port=8080

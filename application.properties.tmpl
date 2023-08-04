@@ -1,0 +1,44 @@
+spring.application.admin.enabled=true
+server.port=8082
+
+# h2 config
+spring.h2.console.enabled=true
+## h2 configs
+spring.datasource.url=jdbc:h2:mem:mdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=admin
+spring.datasource.password=admin
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+#spring.datasource.url=jdbc:mysql://localhost:3306/dev
+#spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+#spring.datasource.username=root
+#spring.datasource.password=root_pwd
+#spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+
+spring.alt-datasource.url=jdbc:h2:mem:mdb
+spring.alt-datasource.driverClassName=org.h2.Driver
+spring.alt-datasource.username=admin
+spring.alt-datasource.password=admin
+spring.alt-jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+#spring.alt-datasource.url=jdbc:mysql://localhost:3306/dev
+#spring.alt-datasource.driverClassName=com.mysql.cj.jdbc.Driver
+#spring.alt-datasource.username=root
+#spring.alt-datasource.password=root_pwd
+#spring.alt-jpa.database-platform=org.hibernate.dialect.MySQLDialect
+
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.hibernate.ddl-auto=create-drop
+logging.level.org.hibernate.persister.entity=ERROR
+
+
+app.external.datasource.enpoint=http://localhost:8080
+app.external.datasource.refresh.delay=5000
+
+# activemq
+spring.activemq.broker-url=tcp://localhost:61616
+spring.activemq.in-memory=true
+spring.activemq.pool.enabled=false
+local.activemq.name=local.inmemory.queue
