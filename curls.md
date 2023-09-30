@@ -6,7 +6,7 @@ curl --location 'http://localhost:8080/getDatabases'
 
 ### get database for domain
 ```http
-curl --location 'http://localhost:8080/getDBForDomain/google.com'
+curl --location 'http://localhost:8080/getDBForDomain/www.domain1.com'
 ```
 ---
 

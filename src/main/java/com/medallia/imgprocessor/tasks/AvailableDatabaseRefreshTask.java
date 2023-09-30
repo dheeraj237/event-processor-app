@@ -20,7 +20,6 @@ import java.util.stream.Collectors;
 @Component
 @Slf4j
 @RequiredArgsConstructor
-// OSCAR: what is the user of this IBaseScheduledTasks
 public class AvailableDatabaseRefreshTask implements IBaseScheduledTasks {
 
 	private final IExternalDbSourceService externalDbSourceService;

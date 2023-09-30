@@ -43,7 +43,6 @@ public class ImageProcessorController extends AbstractBaseController {
 				// Save the image data to the database
 				imageProcessorService.processImageData(imageDomainDTO);
 			}
-			// OSCAR: why only sent 200 response.
 			return getSuccessResponse("Image data processed successfully..");
 		} catch (DataAccessException e) {
 			return getFailedResponse("Application error. Retry later.");

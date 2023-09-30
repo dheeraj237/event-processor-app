@@ -25,7 +25,6 @@ import static java.lang.String.format;
  * Custom dynamic data source router with current data source context holder.
  * @author: dheeraj.suthar
  */
-// OSCAR: Other ways to load and save data into databases. (load entity manage and transaction manage and jdbc connection)
 @Configuration
 @Slf4j
 public class DynamicDataSourceConfig {

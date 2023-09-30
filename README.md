@@ -17,6 +17,7 @@ data/file paths with domains.
 ### Prerequisites
 
 - Java 17
+- maven 3.9.x
 - local data source (in this app we are using two data sources:
     1. local in memory h2 db for caching live available databases.
     2. alternate database for storing image data at runtime with dynamic data source router. (for now I've used local db with data source properties prefix `spring.alt-datasource`)
